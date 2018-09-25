@@ -3,8 +3,11 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 style="height: 38px"><%: Title %>.</h2>
     <h3>Products</h3>
-    <p style="height: 22px">Use this area to provide additional information.</p>
-   <div style="height: 166px">
+    <p style="height: 34px" class="text-center">Search here:
+        <asp:TextBox ID="TextBox1" runat="server" Height="19px" Width="276px"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="position: relative; left: 6px; top: 0px; width: 79px; height: 27px" Text="Search" />
+    </p>
+   <div style="height: 493px; position: relative; left: -44px; top: 10px; margin-left: 40px; width: 905px;" class="text-center">
        
 
 
@@ -15,6 +18,13 @@
 
 
        </asp:PlaceHolder>
+     
+    
+     
+       
+    
+       <asp:GridView ID="GridView1" runat="server">
+       </asp:GridView>
      
     
      
