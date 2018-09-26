@@ -10,16 +10,7 @@
 namespace _24th_Sep2018 {
     
     
-    public partial class Insert {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class Insert1 {
         
         /// <summary>
         /// ProductName control.
@@ -31,6 +22,15 @@ namespace _24th_Sep2018 {
         protected global::System.Web.UI.WebControls.TextBox ProductName;
         
         /// <summary>
+        /// Name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Name;
+        
+        /// <summary>
         /// ProductPrice control.
         /// </summary>
         /// <remarks>
@@ -38,6 +38,15 @@ namespace _24th_Sep2018 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ProductPrice;
+        
+        /// <summary>
+        /// PriceValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PriceValidator;
         
         /// <summary>
         /// ProductDescription control.
@@ -49,13 +58,13 @@ namespace _24th_Sep2018 {
         protected global::System.Web.UI.WebControls.TextBox ProductDescription;
         
         /// <summary>
-        /// ImageFileUpload control.
+        /// DescriptionValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload ImageFileUpload;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DescriptionValidator;
         
         /// <summary>
         /// BrandList control.
@@ -76,12 +85,30 @@ namespace _24th_Sep2018 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// InsertProduct control.
+        /// ImageFileUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button InsertProduct;
+        protected global::System.Web.UI.WebControls.FileUpload ImageFileUpload;
+        
+        /// <summary>
+        /// ImageValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ImageValidator;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

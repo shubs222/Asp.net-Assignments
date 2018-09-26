@@ -1,56 +1,25 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductDetail.aspx.cs" Inherits="_24th_Sep2018.ProductDetail" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind ="ProductDetail.aspx.cs" Inherits="_24th_Sep2018.ProductDetail" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div>
+        <h1>Product Details</h1>
+        <div class="text-center" style="height: 506px">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            height: 442px;
-            text-align: center;
-        }
-        .auto-style2 {
-            height: 367px;
-            position: relative;
-            left: 0px;
-            top: 44px;
-        }
-        .auto-style3 {
-            position: relative;
-            left: -197px;
-            top: 55px;
-            width: 211px;
-            height: 200px;
-        }
-        .auto-style4 {
-            position: relative;
-            left: 391px;
-            top: -194px;
-            width: 546px;
-            height: 363px;
-        }
-        .auto-style5 {
-            font-size: large;
-        }
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div class="auto-style1" style="position: relative">
-            Products Detail:<div class="auto-style2">
-                <asp:Image ID="Image1" runat="server" CssClass="auto-style3" />
-                <div class="auto-style4">
-                    <em><strong>
-                    <asp:Label ID="Label1" runat="server" CssClass="auto-style5" Text="Label"></asp:Label>
-                    </strong></em>
-                    <br />
-                    <br />
-                    <br />
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-                </div>
-            </div>
+            <em>&nbsp;<asp:Label ID="ProductName" runat="server" style="font-family: Arial; font-size: x-large" Text="Label"></asp:Label>
+            <br />
+&nbsp;
+            <asp:Image ID="ProductImage" runat="server" Height="282px" Width="193px" />
+            <br />
+            <br />
+            <asp:Label ID="ProductPrice" runat="server" Text="Label"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="BrandName" runat="server" Text="Label"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="ProductDesription" runat="server" Text="Label"></asp:Label>
+            </em>
+
         </div>
-    </form>
-</body>
-</html>
+    </div>
+        </asp:Content>

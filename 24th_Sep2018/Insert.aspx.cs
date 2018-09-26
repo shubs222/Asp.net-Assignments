@@ -18,8 +18,10 @@ namespace _24th_Sep2018
         protected void AddProduct_Click(object sender, EventArgs e)
         {
             ProductRepository ps = new ProductRepository();
-            ps.InsertAuto(TextBox1.Text,Convert.ToSingle(TextBox2.Text),TextBox3.Text,TextBox4.Text,Convert.ToInt32(DropDownList1.SelectedValue));
+            ps.Insert(ProductName.Text,Convert.ToSingle(ProductPrice.Text),ProductDescription.Text,ImageFileUpload.FileName,Convert.ToInt32(BrandList.SelectedValue));
             Response.Redirect("ProductManagement.aspx");
         }
+
+        
     }
 }

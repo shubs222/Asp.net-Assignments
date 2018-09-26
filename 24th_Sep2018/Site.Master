@@ -52,7 +52,7 @@
                         
                          <% if (Context.User.IsInRole("User"))
                              {%>
-                                   <li><a runat="server" href="~/About">Products</a></li>
+                                   <li><a runat="server"  href="~/Products" >Products</a></li>
                               <%}
                             else
                             {

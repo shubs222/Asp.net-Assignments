@@ -10,16 +10,7 @@
 namespace _24th_Sep2018 {
     
     
-    public partial class Insert {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class Update {
         
         /// <summary>
         /// ProductName control.
@@ -40,31 +31,31 @@ namespace _24th_Sep2018 {
         protected global::System.Web.UI.WebControls.TextBox ProductPrice;
         
         /// <summary>
-        /// ProductDescription control.
+        /// ProductDescriprtion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ProductDescription;
+        protected global::System.Web.UI.WebControls.TextBox ProductDescriprtion;
         
         /// <summary>
-        /// ImageFileUpload control.
+        /// ImageUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload ImageFileUpload;
+        protected global::System.Web.UI.WebControls.FileUpload ImageUpload;
         
         /// <summary>
-        /// BrandList control.
+        /// BrandName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList BrandList;
+        protected global::System.Web.UI.WebControls.DropDownList BrandName;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -76,12 +67,12 @@ namespace _24th_Sep2018 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// InsertProduct control.
+        /// UpdateButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button InsertProduct;
+        protected global::System.Web.UI.WebControls.Button UpdateButton;
     }
 }

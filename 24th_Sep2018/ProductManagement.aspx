@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductManagement.aspx.cs" Inherits="_24th_Sep2018.ProductManagement" %>
+﻿<%@ Page Language="C#" ViewStateMode="Disabled"  AutoEventWireup="true" CodeBehind="ProductManagement.aspx.cs" Inherits="_24th_Sep2018.ProductManagement" %>
 
 <!DOCTYPE html>
 

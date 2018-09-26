@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Insert.aspx.cs" Inherits="_24th_Sep2018.Insert" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeBehind="Insert.aspx.cs" Inherits="_24th_Sep2018.Insert" %>
 
 <!DOCTYPE html>
 
@@ -33,29 +33,29 @@
             <h1 style="text-align:center">Insert Your Products</h1>
             <div class="auto-style2">
                 Product Name:&nbsp;
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="ProductName" runat="server"></asp:TextBox>
                 <br />
                 <br />
                 Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="ProductPrice" runat="server"></asp:TextBox>
                 <br />
                 <br />
                 Description:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:TextBox ID="ProductDescription" runat="server"></asp:TextBox>
                 <br />
-                Image Url:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                Image Url:&nbsp;&nbsp;&nbsp;<asp:FileUpload ID="ImageFileUpload" runat="server" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <br />
                 <br />
                 <br />
                 Select Brand:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="Id" Height="39px" Width="140px">
+                <asp:DropDownList ID="BrandList" runat="server" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="Id" Height="39px" Width="140px">
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AcuDataConnectionString %>" SelectCommand="SELECT [Id], [Name] FROM [Brand]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AcuDataConnectionString4 %>" SelectCommand="SELECT [Id], [Name] FROM [Brand]"></asp:SqlDataSource>
                 <br />
                 <br />
                 <br />
-                <asp:Button ID="AddProduct" runat="server" CssClass="auto-style3" OnClick="AddProduct_Click" Text="Add Product" />
+                <asp:Button ID="InsertProduct" runat="server" CssClass="auto-style3" OnClick="AddProduct_Click" Text="Add Product" />
             </div>
         </div>
     </form>

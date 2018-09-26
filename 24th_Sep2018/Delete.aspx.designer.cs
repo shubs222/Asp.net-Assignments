@@ -10,16 +10,7 @@
 namespace _24th_Sep2018 {
     
     
-    public partial class Insert {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class Delete {
         
         /// <summary>
         /// ProductName control.
@@ -49,13 +40,13 @@ namespace _24th_Sep2018 {
         protected global::System.Web.UI.WebControls.TextBox ProductDescription;
         
         /// <summary>
-        /// ImageFileUpload control.
+        /// ProductimageUrl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload ImageFileUpload;
+        protected global::System.Web.UI.WebControls.Image ProductimageUrl;
         
         /// <summary>
         /// BrandList control.
@@ -76,12 +67,12 @@ namespace _24th_Sep2018 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// InsertProduct control.
+        /// DeleteProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button InsertProduct;
+        protected global::System.Web.UI.WebControls.Button DeleteProduct;
     }
 }

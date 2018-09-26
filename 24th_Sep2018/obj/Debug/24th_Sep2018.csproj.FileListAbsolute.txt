@@ -50,6 +50,7 @@ D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\roslyn\VBCSCompiler.exe.config
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\Antlr3.Runtime.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\AspNet.ScriptManager.bootstrap.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\AspNet.ScriptManager.jQuery.dll
+D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\DAL.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\EntityFramework.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\EntityFramework.SqlServer.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\Microsoft.AspNet.FriendlyUrls.dll
@@ -75,6 +76,7 @@ D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\Owin.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\System.Web.Optimization.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\System.Web.Providers.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\WebGrease.dll
+D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\DAL.pdb
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\System.Web.Optimization.xml
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\Newtonsoft.Json.xml
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\Antlr3.Runtime.pdb
@@ -100,5 +102,3 @@ D:\My Tasks\Asp.net Assignments\24th_Sep2018\obj\Debug\24th_Sep2018.csproj.CoreC
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\obj\Debug\24th_Sep2018.csproj.CopyComplete
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\obj\Debug\24th_Sep2018.dll
 D:\My Tasks\Asp.net Assignments\24th_Sep2018\obj\Debug\24th_Sep2018.pdb
-D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\DAL.dll
-D:\My Tasks\Asp.net Assignments\24th_Sep2018\bin\DAL.pdb

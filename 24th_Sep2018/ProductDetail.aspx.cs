@@ -12,13 +12,13 @@ namespace _24th_Sep2018
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ProductRepository ps = new ProductRepository();
+            ProductRepository productRepository = new ProductRepository();
             int str = Convert.ToInt32(Request.QueryString["id"]);
-           
-            ps.getDetails();
-            Image1.ImageUrl = "~/"+ProductRepository.productslist[str].ProductUrl;
-            Label1.Text= ProductRepository.productslist[str].PName;
-            Label2.Text = ProductRepository.productslist[str].Price.ToString();
+            productRepository.getDetails();
+            ProductImage.ImageUrl = "~/Content/"+productRepository.productslist[str].ProductUrl;
+            ProductName.Text= productRepository.productslist[str].PName;
+            ProductPrice.Text = productRepository.productslist[str].Price.ToString();
+            ProductDesription.Text = productRepository.productslist[str].Description;
         }
     }
 }
