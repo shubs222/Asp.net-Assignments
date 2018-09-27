@@ -12,50 +12,45 @@ namespace _24th_Sep2018
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            if (!(Context.User.IsInRole("ProductsManager")))
-            {
-                Response.Redirect("Default.aspx");
-            }
-            if (!Page.IsPostBack)
-            {
+
                 Table tb = new Table();
                 tb.ID = "1";
                 PlaceHolder1.Controls.Add(tb);
-                ProductRepository ps = new ProductRepository();
-                ps.getDetails();
-                for (int count = 0; count < ProductRepository.productslist.Count; count++)
+                TableRow tablerow;
+                TableCell tcell;
+                HyperLink preview;
+                HyperLink delete;
+                HyperLink update;
+                ProductRepository productRepository = new ProductRepository();
+                productRepository.getDetails();
+                for (int count = 0; count < productRepository.productslist.Count; count++)
                 {
-                    TableRow tablerow = new TableRow();
+                   
+                     tablerow = new TableRow();
                     tb.Rows.Add(tablerow);
-                    TableCell tcell = new TableCell();
+                     tcell = new TableCell();
                     Label lb = new Label();
-                    HyperLink preview = new HyperLink();
-                    HyperLink delete = new HyperLink();
-                    HyperLink update = new HyperLink();
+                    preview = new HyperLink();
+                    delete = new HyperLink();
+                     update = new HyperLink();
                     PlaceHolder1.Controls.Add(lb);
-                    lb.Text = ProductRepository.productslist[count].PName;
+                    lb.Text = productRepository.productslist[count].PName;
                     lb.Width = 100;
                     PlaceHolder1.Controls.Add(preview);
                     preview.Text = "Preview";
-                    preview.NavigateUrl = "ProductDetail?id="+ProductRepository.productslist[count].ProductId;
+                    preview.NavigateUrl = "ProductDetail?id=" +count ;
                     preview.Width = 100;
-                    //PlaceHolder1.Controls.Add(update);
-                    //update.Text = "Update";
-                    //update.NavigateUrl = "ProductManagement?id="+ ProductRepository.productslist[count].ProductId;
-                    //update.Width = 100;
+                    PlaceHolder1.Controls.Add(update);
+                    update.Text = "Update";
+                 update.NavigateUrl = "Update?id=" + count;
+                    update.Width = 100;
                     PlaceHolder1.Controls.Add(delete);
-                    delete.Text = "Delete?id="+ ProductRepository.productslist[count].ProductId + "<br/>";
-                    delete.NavigateUrl = "ProductManagent";
-                }
-                int id = Convert.ToInt32(Request.QueryString["id"]);
-                ps.DeleteProduct(id);
-            }
+                    delete.Text = "Delete" + "<br/>";
+                delete.NavigateUrl = "Delete?id=" +count;
+                }   
+
         }
 
-        protected void Insert_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Insert.aspx");
-        }
+       
     }
 }

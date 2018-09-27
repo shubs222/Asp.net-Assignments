@@ -1,37 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductManagement.aspx.cs" Inherits="_24th_Sep2018.ProductManagement" %>
+﻿<%@ Page Language="C#" ViewStateMode="Disabled" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductManagement.aspx.cs" Inherits="_24th_Sep2018.ProductManagement" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            height: 457px;
-            text-align: center;
-            font-size: xx-large;
-        }
-        .auto-style2 {
-            position: relative;
-            left: 74px;
-            top: 0px;
-            height: 446px;
-            width: 787px;
-            font-size: medium;
-            text-align: left;
-        }
-    </style>
-</head>
-<body style="height: 487px">
-    <form id="form1" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <div class="auto-style1">
-            Product Management<div class="auto-style2">
-                &nbsp;<asp:Button ID="Insert" runat="server" Height="48px" OnClick="Insert_Click" Text="Insert" Width="154px" />
+            <div class="text-center" style="font-family: Arial; font-size: x-large">
+            Product Management</div>
+            <div class="text-center" style="text-align: center">
+                <span style="font-family: Arial; font-size: x-large">&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Insert1.aspx">Insert</asp:HyperLink>
+                </span>
                 <br />
                 <br />
                 <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
             </div>
         </div>
-    </form>
-</body>
-</html>
+    </asp:Content>
